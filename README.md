@@ -167,3 +167,14 @@ nav a:hover {
 background: #0B6B3A;
 }
 ```
+
+Kemudian tambahkan tag <link> untuk merujuk file css yang sudah dibuat pada bagian <head>
+
+```
+<head>
+<!-- menyisipkan css eksternal -->
+<link rel="stylesheet" href="style_eksternal.css" type="text/css">
+</head>
+```
+
+Selanjutnya refresh kembali browser untuk melihat perubahannya.
