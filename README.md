@@ -58,7 +58,7 @@ ID Selector dideklarasikan dengan menambahkan tanda # sebelum nama id yang akan 
 Kemudian pada tag HTML ditambahkan atribut id dengan value nama id tanpa menggunakan #.
 Satu elemen HTML hanya dapat diberikan satu id.
 ```
-# 1. Membuat dokumen HTML
+#1. Membuat dokumen HTML
 Buatlah dokumen HTML seperti berikut
 ```
 <!DOCTYPE html>
@@ -100,7 +100,6 @@ Penggunaan CSS
 ```
 Modul Praktikum Pemrograman Web
 Selanjutnya buka pada brwoser untuk melihat hasilnya.
-
 ![Contoh1](https://user-images.githubusercontent.com/56244029/113761133-4cace600-9741-11eb-8fc9-7af8eb5a59a4.png)
 
 ```
