@@ -60,6 +60,7 @@ Satu elemen HTML hanya dapat diberikan satu id.
 ```
 ### 1. Membuat dokumen HTML
 Buatlah dokumen HTML seperti berikut
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -98,6 +99,7 @@ Penggunaan CSS
 <p id="rata-tengah">Paragraf dengan rata tengah</>
 <p id"serif">paragraf dengan font serif</>
 ```
+
 Modul Praktikum Pemrograman Web
 
 Selanjutnya buka pada brwoser untuk melihat hasilnya.
@@ -107,6 +109,7 @@ Selanjutnya buka pada brwoser untuk melihat hasilnya.
 ```
 ### 2. Mendeklarasikan CSS Internal
 Kemudian tambahkan deklarasi CSS internal seperti berikut pada bagian head dokumen.
+
 ```
 <head>
 <title>CSS Dasar</title>
