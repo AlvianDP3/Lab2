@@ -212,4 +212,8 @@ background: #E42A42;
 }
 ```
 
+Kemudian simpan kembali dan refresh browser untuk melihat perubahannya.
+
+![contoh5](https://user-images.githubusercontent.com/56244029/113768567-30617700-974a-11eb-86f4-c2eaaee406fe.jpg)
+
 
