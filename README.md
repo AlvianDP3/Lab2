@@ -99,7 +99,9 @@ Penggunaan CSS
 <p id"serif">paragraf dengan font serif</>
 ```
 Modul Praktikum Pemrograman Web
+
 Selanjutnya buka pada brwoser untuk melihat hasilnya.
+
 ![Contoh1](https://user-images.githubusercontent.com/56244029/113761133-4cace600-9741-11eb-8fc9-7af8eb5a59a4.png)
 
 ```
