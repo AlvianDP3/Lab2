@@ -144,3 +144,6 @@ Selanjutnya simpan perubahan yang ada, dan lakukan refresh pada browser untuk me
 <p style="text-align: center; color: #ccd8e4;">
 ```
 
+Simpan kembali dan refresh kembali browser untuk melihat perubahannya.
+
+![Contoh3](https://user-images.githubusercontent.com/56244029/113765023-f1312700-9745-11eb-9081-ab31f01026b3.jpg)
