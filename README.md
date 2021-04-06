@@ -181,3 +181,35 @@ Selanjutnya refresh kembali browser untuk melihat perubahannya.
 
 ![contoh4](https://user-images.githubusercontent.com/56244029/113767920-6f42fd00-9749-11eb-902a-b5f748c8048a.jpg)
 
+# 5. Menambahkan CSS Selector
+Selanjutnya menambahkan CSS Selector menggunakan ID dan Class Selector. Pada file
+style_eksternal.css, tambahkan kode berikut.
+
+```
+/* ID Selector */
+#intro {
+background: #418fb1;
+border: 1px solid #099249;
+min-height: 100px;
+padding: 10px;
+}
+#intro h1 {
+text-align: left;
+border: 0;
+color: #fff;
+}
+/* Class Selector */
+.button {
+padding: 15px 20px;
+background: #bebcbd;
+color: #fff;
+display: inline-block;
+margin: 10px;
+text-decoration: none;
+}
+.btn-primary {
+background: #E42A42;
+}
+```
+
+
