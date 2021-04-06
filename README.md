@@ -57,7 +57,7 @@ Deklarasi CSS
 ID Selector dideklarasikan dengan menambahkan tanda # sebelum nama id yang akan digunakan.
 Kemudian pada tag HTML ditambahkan atribut id dengan value nama id tanpa menggunakan #.
 Satu elemen HTML hanya dapat diberikan satu id.
-```
+
 ### 1. Membuat dokumen HTML
 Buatlah dokumen HTML seperti berikut
 
@@ -106,9 +106,10 @@ Selanjutnya buka pada brwoser untuk melihat hasilnya.
 
 ![Contoh1](https://user-images.githubusercontent.com/56244029/113761133-4cace600-9741-11eb-8fc9-7af8eb5a59a4.png)
 
-```
+
 ### 2. Mendeklarasikan CSS Internal
 Kemudian tambahkan deklarasi CSS internal seperti berikut pada bagian head dokumen.
+
 ```
 <head>
 <title>CSS Dasar</title>
