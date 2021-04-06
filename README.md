@@ -239,6 +239,7 @@ HTML digunakan untuk membuat kerangka website, CSS digunakan untuk membuat tampi
 3. Opsi 1 – Internal CSS
 Kode CSS internal diletakkan di dalam bagian <head> pada halaman. Class dan ID bisa digunakan untuk merujuk pada kode CSS, namun hanya akan aktif pada halaman tersebut. Style CSS yang dipasang dengan metode ini akan di-download setiap kali halaman dipanggil, jadi ini akan meningkatkan kecepatan akses. Namun, ada beberapa case dimana penggunaan internal stylesheet justru berguna. Salah satu contohnya adalah untuk mengirimkan template halaman ke seseorang – karena semuanya bisa terlihat dalam 1 halaman, maka akan lebih mudah untuk melihat previewnya. CSS internal diletakkan di dalam tag <style></style>. Contohnya:
 
+```
 <head>
   <style type="text/css">
     p {color:white; font-size: 10px;}
@@ -246,6 +247,8 @@ Kode CSS internal diletakkan di dalam bagian <head> pada halaman. Class dan ID b
     #button-go, #button-back {border: solid 1px black;}
   </style>
 </head>
+```
+
 Manfaat internal CSS:
 
 Perubahan hanya terjadi pada 1 halaman
@@ -260,6 +263,7 @@ Cara menambahkan internal CSS ke halaman HTML
 
 2. Temukan bagian awal kode <head> dan tambahkan kode berikut ini di bawahnya:
 
+```
 <style type="text/css">
 3. Pada baris baru, tambahkan rule CSS:
 
@@ -270,11 +274,14 @@ h1 {
     color: red;
     padding: 60px;
 }
+```
+
 4. Setelah Anda menambahkan rule CSS, tambahkan tag penutup:
 
 </style>
 Nantinya file HTML yang sudah ditambahkan style CSS akan terlihat seperti ini:
 
+```
 <!DOCTYPE html>
 <html>
 <head>
@@ -295,9 +302,12 @@ h1 {
  
 </body>
 </html>
+```
+
 Opsi 2 – External CSS
 Salah satu cara yang paling nyaman untuk menambahkan CSS ke website Anda adalah dengan menghubungkannya ke file .CSS eksternal. Dengan cara tersebut, perubahan apapun yang Anda buat pada file CSS akan tampil pada website Anda secara keseluruhan. File CSS eksternal biasanya diletakkan setelah bagian <head> pada halaman:
 
+```
 <head>
   <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
@@ -313,6 +323,8 @@ Dalam contoh diatas, file style.css berisikan semua rule. Contohnya:
    width: 34%;
    background:#eff2df;
 }
+```
+
 Manfaat CSS eksternal:
 
 Ukuran file HTML menjadi lebih kecil dan strukturnya lebih rapi
@@ -325,6 +337,7 @@ Opsi 3 – Inline CSS
 Inline CSS digunakan untuk tag HTML tertentu. Atribut <style> digunakan untuk memberikan style ke tag HTML tertentu. Cara ini kurang direkomendasikan, karena setiap tag HTML malah harus diberikan style masing-masing. Anda akan lebih sulit dalam mengatur website jika hanya menggunakan inline CSS. Namun, di beberapa situasi justru inline CSS menjadi berguna. Contohnya, pada saat Anda tidak memiliki akses ke file CSS atau harus mengubah style untuk 1 elemen saja.
 Contoh halaman HTML dengan inline CSS adalah seperti berikut:
 
+```
 <!DOCTYPE html>
 <html>
 <body style="background-color:black;">
@@ -334,11 +347,38 @@ Contoh halaman HTML dengan inline CSS adalah seperti berikut:
  
 </body>
 </html>
-Manfaat Inline CSS:
+```
+4. Pertama-tama, kembalilah dan temukan keluaran dari Google Fonts yang kamu simpan di tempat yang aman. Tambahkan elemen <link> (en-US) di suatu tempat pada bagian head dari index.html kamu (di manapun di antara tag <head> dan </head>). Elemen link tersebut akan terlihat seperti ini:
+```
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+```
 
-Berguna jika Anda ingin menguji dan melihat perubahan
-Berguna untuk perbaikan cepat
-Permintaan HTTP yang lebih kecil
-Kekurangan inline CSS:
+Selanjutnya, hapus aturan yang sudah ada yang kamu miliki di file style.css.
+Tambahkan baris berikut, dan ubah baris placeholder dengan font-family sungguhan yang kamu dapatkan dari Google Fonts. (font-family berarti jenis font yang ingin kamu gunakan untuk teks.) Aturan ini mengatur jenis font dan ukuran font dasar secara global untuk seluruh halaman (karena <html> merupakan parent element dari seluruh
+ halaman, dan semua elemen di dalam halaman tersebut mewarisi font-size dan font-family yang sama):
+  
+```
+html {
+  font-size: 10px; /* px means 'pixels': the base font size is now 10 pixels high  */
+  font-family: placeholder: this should be the rest of the output you got from Google fonts
+}
+```
 
-Inline CSS harus diterapkan pada setiap elemen
+Catatan: Apapun yang ada di dalam sebuah dokumen CSS antara /* dan */ adalah komentar CSS, yang akan diabaikan oleh browser ketika browser sedang mengolah kode untuk ditampilkan. Komentar berguna bagi kamu untuk menulis catatan-catatan yang membantu terkait apa yang sedang kamu lakukan.
+
+Sekarang kita akan menentukan font size untuk elemen-elemen berisi teks yang ada di dalam body HTML (<h1> (en-US), <li> (en-US), dan <p> (en-US)). Kita juga akan menengahkan posisi teks pada heading dan menentukan line height serta letter spacing pada konten bagian body agar dapat lebih mudah dibaca:
+
+```
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
+```
+
+```
+p, li {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+```
