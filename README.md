@@ -147,3 +147,23 @@ Selanjutnya simpan perubahan yang ada, dan lakukan refresh pada browser untuk me
 Simpan kembali dan refresh kembali browser untuk melihat perubahannya.
 
 ![Contoh3](https://user-images.githubusercontent.com/56244029/113765023-f1312700-9745-11eb-9081-ab31f01026b3.jpg)
+
+# 4. Membuat CSS Eksternal
+Buatlah file baru dengan nama style_eksternal.css kemudian buatlah deklarasi CSS seperti berikut.
+
+```
+nav {
+background: #20A759;
+color:#fff;
+padding: 10px;
+}
+nav a {
+color: #fff;
+text-decoration: none;
+padding:10px 20px;
+}
+nav .active,
+nav a:hover {
+background: #0B6B3A;
+}
+```
