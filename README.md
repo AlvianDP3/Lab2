@@ -216,4 +216,129 @@ Kemudian simpan kembali dan refresh browser untuk melihat perubahannya.
 
 ![contoh5](https://user-images.githubusercontent.com/56244029/113768567-30617700-974a-11eb-86f4-c2eaaee406fe.jpg)
 
+# Pertanyaan dan Tugas
+1. Lakukan eksperimen dengan mengubah dan menambah properti dan nilai pada kode CSS
+dengan mengacu pada CSS Cheat Sheet yang diberikan pada file terpisah dari modul ini.
+2. Apa perbedaan pendeklarasian CSS elemen h1 {...} dengan #intro h1 {...}? berikan
+penjelasannya!
+3. Apabila ada deklarasi CSS secara internal, lalu ditambahkan CSS eksternal dan inline CSS pada
+elemen yang sama. Deklarasi manakah yang akan ditampilkan pada browser? Berikan
+penjelasan dan contohnya!
+4. Pada sebuah elemen HTML terdapat ID dan Class, apabila masing-masing selector tersebut
+terdapat deklarasi CSS, maka deklarasi manakah yang akan ditampilkan pada browser?
+Berikan penjelasan dan contohnya! ( <p id="paragraf-1" class="text-paragraf"> )
 
+# jawaban
+
+1. Kita bisa memformat tampilan halaman web menggunakan HTML, namun cara ini sudah tidak digunakan lagi. Kita bisa memformat tampilan halaman web mengguankan CSS. karena kita memisahkan fungsional dari HTML, CSS, dan JavaScript sesuai tujuan masing-masing.
+HTML digunakan untuk membuat kerangka website, CSS digunakan untuk membuat tampilan website, JavaScript digunakan untuk membuat website menjadi interaktif.
+
+2. <h1>rancangan website dasar<h1> Penjelasan Satu elemen H1
+<h2>HTML</h2> Penjelasan Elemen H2 sebanyak yang dibutuhkan untuk menunjukkan bagian pada halaman (Anda hanya membutuhkan satu, dua, atau tiga bila halaman ringkas.
+
+3. Opsi 1 – Internal CSS
+Kode CSS internal diletakkan di dalam bagian <head> pada halaman. Class dan ID bisa digunakan untuk merujuk pada kode CSS, namun hanya akan aktif pada halaman tersebut. Style CSS yang dipasang dengan metode ini akan di-download setiap kali halaman dipanggil, jadi ini akan meningkatkan kecepatan akses. Namun, ada beberapa case dimana penggunaan internal stylesheet justru berguna. Salah satu contohnya adalah untuk mengirimkan template halaman ke seseorang – karena semuanya bisa terlihat dalam 1 halaman, maka akan lebih mudah untuk melihat previewnya. CSS internal diletakkan di dalam tag <style></style>. Contohnya:
+
+<head>
+  <style type="text/css">
+    p {color:white; font-size: 10px;}
+    .center {display: block; margin: 0 auto;}
+    #button-go, #button-back {border: solid 1px black;}
+  </style>
+</head>
+Manfaat internal CSS:
+
+Perubahan hanya terjadi pada 1 halaman
+Class dan ID bisa digunakan oleh internal stylesheet
+Tidak perlu meng-upload beberapa file karena HTML dan CSS bisa digunakan di file yang sama.
+Kekurangan menggunakan Internal CSS:
+
+Meningkatkan waktu akses website
+Perubahan hanya terjadi pada 1 halaman – tidak efisien bila Anda ingin menggunakan CSS yang sama pada beberapa file.
+Cara menambahkan internal CSS ke halaman HTML
+1. Buka file HTML Anda dengan menggunakan text editor. Jika halaman sudah di-upload ke hosting, Anda bisa menggunakan text editor yang telah disediakan oleh hosting Anda. Jika Anda memiliki file HTML di komputer Anda, Anda bisa menggunakan text editor apapun untuk meng-edit dan kemudian meng-upload file ke akun hosting Anda menggunakan aplikasi FTP.
+
+2. Temukan bagian awal kode <head> dan tambahkan kode berikut ini di bawahnya:
+
+<style type="text/css">
+3. Pada baris baru, tambahkan rule CSS:
+
+body {
+    background-color: blue;
+}
+h1 {
+    color: red;
+    padding: 60px;
+}
+4. Setelah Anda menambahkan rule CSS, tambahkan tag penutup:
+
+</style>
+Nantinya file HTML yang sudah ditambahkan style CSS akan terlihat seperti ini:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    background-color: blue;
+}
+h1 {
+    color: red;
+    padding: 60px;
+} 
+</style>
+</head>
+<body>
+ 
+<h1>Hostinger Tutorials</h1>
+<p>This is our paragraph.</p>
+ 
+</body>
+</html>
+Opsi 2 – External CSS
+Salah satu cara yang paling nyaman untuk menambahkan CSS ke website Anda adalah dengan menghubungkannya ke file .CSS eksternal. Dengan cara tersebut, perubahan apapun yang Anda buat pada file CSS akan tampil pada website Anda secara keseluruhan. File CSS eksternal biasanya diletakkan setelah bagian <head> pada halaman:
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+Dalam contoh diatas, file style.css berisikan semua rule. Contohnya:
+
+.xleftcol {
+   float: left;
+   width: 33%;
+   background:#809900;
+}
+.xmiddlecol {
+   float: left;
+   width: 34%;
+   background:#eff2df;
+}
+Manfaat CSS eksternal:
+
+Ukuran file HTML menjadi lebih kecil dan strukturnya lebih rapi
+Kecepatan loading menjadi lebih cepat
+File CSS yang sama bisa digunakan di banyak halaman.
+Kekurangan CSS eksternal:
+
+Halaman belum tampil secara sempurna hingga file CSS selesai dipanggil.
+Opsi 3 – Inline CSS
+Inline CSS digunakan untuk tag HTML tertentu. Atribut <style> digunakan untuk memberikan style ke tag HTML tertentu. Cara ini kurang direkomendasikan, karena setiap tag HTML malah harus diberikan style masing-masing. Anda akan lebih sulit dalam mengatur website jika hanya menggunakan inline CSS. Namun, di beberapa situasi justru inline CSS menjadi berguna. Contohnya, pada saat Anda tidak memiliki akses ke file CSS atau harus mengubah style untuk 1 elemen saja.
+Contoh halaman HTML dengan inline CSS adalah seperti berikut:
+
+<!DOCTYPE html>
+<html>
+<body style="background-color:black;">
+ 
+<h1 style="color:white;padding:30px;">Hostinger Tutorials</h1>
+<p style="color:white;">Something usefull here.</p>
+ 
+</body>
+</html>
+Manfaat Inline CSS:
+
+Berguna jika Anda ingin menguji dan melihat perubahan
+Berguna untuk perbaikan cepat
+Permintaan HTTP yang lebih kecil
+Kekurangan inline CSS:
+
+Inline CSS harus diterapkan pada setiap elemen
