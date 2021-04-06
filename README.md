@@ -128,6 +128,7 @@ color:#6d6a6b;
 </style>
 </head>
 ```
+
 Selanjutnya simpan perubahan yang ada, dan lakukan refresh pada browser untuk melihat
 
 
