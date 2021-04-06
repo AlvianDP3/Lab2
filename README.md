@@ -178,3 +178,6 @@ Kemudian tambahkan tag <link> untuk merujuk file css yang sudah dibuat pada bagi
 ```
 
 Selanjutnya refresh kembali browser untuk melihat perubahannya.
+
+![contoh4](https://user-images.githubusercontent.com/56244029/113767920-6f42fd00-9749-11eb-902a-b5f748c8048a.jpg)
+
