@@ -133,6 +133,7 @@ color:#6d6a6b;
 </style>
 </head>
 ```
+
 Selanjutnya simpan perubahan yang ada, dan lakukan refresh pada browser untuk melihat hasilnya.
 
 ![Contoh2](https://user-images.githubusercontent.com/56244029/113763698-2e94b500-9744-11eb-98a1-51d44d762a93.jpg)
